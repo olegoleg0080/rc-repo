@@ -1,4 +1,4 @@
-[
+const people = [
     {
         "id": 1,
         "name": "Seven",
@@ -30,3 +30,4 @@
         "tel": "+38 050 540 16 44"
     }
 ]
+export default people;

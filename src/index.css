@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.root{
+  padding-top: 20vh;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  overflow-x: auto;
+}
+img{
+  padding: 0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  width: 190px;
+  border: 3px solid black;
+}
+.card{
+  padding: 30px;
+  display: inline-block;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(93, 93, 93);
+}
+h1, p{
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+p  {padding: 10px;}
+td{
+  max-height: 200px;
+
+  text-align: center;
+}
+tr{
+  background-color: aquamarine;
+}
+th{
+  background-color:rgb(13, 255, 0);
+}
+
