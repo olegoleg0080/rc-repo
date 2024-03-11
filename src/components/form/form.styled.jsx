@@ -85,6 +85,12 @@ export const FormTitle = styled.h2`
 
 export const Input = styled.input`
     padding: 10px;
+    display: block;
+`;
+
+export const Label = styled.label`
+    display: block;
+    margin-bottom: 10px;
 `;
 
 export const FormSub = styled.button`
@@ -100,4 +106,12 @@ export const Select = styled.select`
     padding: 10px;
     background-color: #ffff;
     color: black;
+`;
+
+export const DelBtn = styled.button`
+    padding: 10px;
+    display: inline-block;
+    outline: "1px solid black";
+    background-color: #fc0000;
+    color: #fff;
 `;
