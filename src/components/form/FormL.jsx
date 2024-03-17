@@ -2,7 +2,7 @@
 import { Card } from "./List";
 import { List } from "./form.styled";
 
-export const ListToDo = ({ list, onDelete }) => {
+export const ListToDo = ({ list, onDelete, onSelect}) => {
     return (
         <List>
             {list.map((item) => (
@@ -14,6 +14,7 @@ export const ListToDo = ({ list, onDelete }) => {
                     status={item.status}
                     description={item.description}
                     onDeleteBtn={onDelete}
+                    onSelected={onSelect}
                 />
             ))}
         </List>
