@@ -1,4 +1,5 @@
 import { colors } from "constants";
+import { Field, Form } from "formik";
 import styled from "styled-components";
 export const List = styled.ul`
     margin: 0;
@@ -11,7 +12,8 @@ export const List = styled.ul`
 `;
 
 const getColor = ({ level }) => {
-    switch (level) {
+    let lvl = Number(level);
+    switch (lvl) {
         case 1:
             return colors.LEVEL_ONE;
         case 2:
@@ -64,14 +66,14 @@ export const Level = styled.div`
     border: 1px solid black;
 `;
 
-export const Form = styled.form`
+export const FormSort = styled(Form)`
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 24px;
     gap: 20px;
     border: 2px solid #0000ff;
-    max-width: 300px;
+    max-width: 600px;
     margin: 20px auto;
 `;
 
@@ -83,10 +85,11 @@ export const FormTitle = styled.h2`
     padding: 10px;
 `;
 
-export const Input = styled.input`
+export const Input = styled(Field)`
     padding: 10px;
     display: block;
 `;
+
 
 export const Label = styled.label`
     display: block;

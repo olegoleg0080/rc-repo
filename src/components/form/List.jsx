@@ -1,10 +1,18 @@
 import { DelBtn, Item, Level, Text, Title } from "./form.styled";
 
-export const Card = ({ id, title, level, description, onDeleteBtn, onSelected}) => {
+export const Card = ({
+    id,
+    title,
+    level,
+    description,
+    onDeleteBtn,
+    onSelected,
+}) => {
     return (
         <Item
-        onClick={()=>onSelected({title, description, level, id})}
-        level={level}>
+            onClick={(e) => onSelected(e, {title, description, level, id })}
+            level={level}
+        >
             <Title>{title}</Title>
             <Text>{description}</Text>
             <Level>{level}</Level>

@@ -2,12 +2,13 @@
 import { Card } from "./List";
 import { List } from "./form.styled";
 
-export const ListToDo = ({ list, onDelete, onSelect}) => {
+export const ListToDo = ({ list, onDelete, onSelect }) => {
     return (
         <List>
             {list.map((item) => (
                 <Card
-                    key={item.id}
+                    
+                    key={Number(item.id)}
                     id={item.id}
                     title={item.title}
                     level={item.level}

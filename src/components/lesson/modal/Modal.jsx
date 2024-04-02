@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { BtnClose, ModalBG, ModalWindow } from "./Modal.styled";
+import { ModalBG, ModalWindow } from "./Modal.styled";
 
 class Modal extends Component {
     componentDidMount() {
@@ -19,12 +19,11 @@ class Modal extends Component {
         }
     };
     render() {
-        const { children, onClose } = this.props;
+        const { children} = this.props;
         return (
             <ModalBG onClick={this.handleClickBG}>
                 <ModalWindow>
                     {children}
-                    <BtnClose onClick={onClose} />
                 </ModalWindow>
             </ModalBG>
         );
